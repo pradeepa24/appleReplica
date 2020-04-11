@@ -1,26 +1,51 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Switch, Route} from 'react-router-dom';
+import Home from './components/home-component/Home';
+import Landing from './components/landing-page-component/Landing';
+import Phone from './components/iPhone-component/Phone';
+import Watch from './components/watch-component/Watch';
 
-function App() {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      changePhone: true,
+      changeWatch: 'White',
+      watches: [{color:'White', checked:true},
+                {color:'Black', checked:false}]
+    }
+}
+onChangePhone = e => {
+  console.log(e.target.checked);
+  this.setState({
+      changePhone: e.target.checked
+  })
+};
+onRadiochange = e => {
+  let watchesCopy = [...this.state.watches];
+  watchesCopy.find((watch)=>watch.color === e.target.value).checked = true;
+  watchesCopy.find((watch)=>!(watch.color === e.target.value)).checked = false;
+  this.setState({
+      changeWatch: e.target.value,
+      watches: watchesCopy
+  });
+  console.log(e.target.checked);
+};
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+           <Route exact path="/" component={Home} />
+           <Route exact path="/landing" render = { (props) => <Landing {...props} /> } />
+           <Route exact path="/iPhone" render = { (props) => <Phone {...props} changePhone={this.state.changePhone} onChangePhone={this.onChangePhone}/> } />
+           <Route exact path="/watch" render = { (props) => <Watch {...props} changeWatch={this.state.changeWatch}
+           watches={this.state.watches} onRadiochange={this.onRadiochange}/> } />
+           {/* <Route exact path="/new-beer" render = { (props) => <NewBeer {...props} newBeer = {this.state.newBeer} setBeer = {this.setBeer} resetBeer = {this.resetBeer}/> }  />
+           <Route exact path="/beers/:id" render = { (props) => <Beer {...props} beer = {this.state.beer} dispBeer = {this.dispBeer}/> }/> */}
+        </Switch>
     </div>
   );
 }
-
-export default App;
+}

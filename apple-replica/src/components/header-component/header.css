@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'Poppins-Regular';
+    src: url('../../fonts/Poppins/Poppins-Regular.ttf'); 
+}
+header {
+    /* background-color: black;
+    color: white; */
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    padding: 10px;
+    height: 6vh;
+    width: 3vw;
+}
+.apple-logo {
+    width: 5vw;
+    background-color: black;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 45vw;
+    padding-right: 40px;
+    font-size: 17px;
+}
+a {
+    text-decoration: none;
+    font-family: 'Poppins-Regular', Helvetica;
+    color: rgba(83, 83, 83, 0.603);
+}
+a:hover, a:active, .navbar__link--active {
+    color: black;
+    font-weight: bold;
+}
+button {
+    height: 5vh;
+    width: 9vw;
+    background-color: rgba(67, 202, 255, 0.979);
+    color: white;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: solid 2px rgba(67, 202, 255, 0.979);
+}

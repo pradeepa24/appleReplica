@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'Poppins-Regular';
+    src: url('../../fonts/Poppins/Poppins-Regular.ttf'); 
+}
+.main-content {
+    background-image: linear-gradient(rgba(134, 196, 236, 0.993) 30%, white 70%);
+    height: 90vh;
+    width: 100vw;
+    font-family: 'Poppins-Regular', Helvetica;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.apple-logo-home {
+    width: 5vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-main {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9vh;
+}
+.main-content h4 {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+.main-content div {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.main-content div h2 {
+    font-size: 52px;
+}

@@ -1,0 +1,168 @@
+.watch-details-wrapper {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch-details {
+    padding: 50px;
+    height: 70vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.watch-details p {
+    text-decoration: none;
+    font-family: 'Poppins-Regular', Helvetica;
+    color: rgba(100, 100, 100, 0.603);
+    font-size: 20px;
+    line-height: 0.75;
+}
+.watch-description {
+    background-image: url('https://www.apple.com/ac/ac-video-posterframe/4.0/images/ac_video_poster_960x540_2x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    width: 50vw;
+    line-height: 1;
+}
+.bottom-watch-description {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.watch-description h3, .watch-pricing a {
+    color: rgba(247, 8, 80, 0.979);
+}
+.watch-pricing {
+    padding: 10px;
+    height: auto;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: 0.5;
+  }
+  .watch-pricing h2 {
+     color: rgba(179, 179, 179, 0.603);
+     font-size: 42px;
+  }
+  .watch-pricing a {
+      font-weight: bold;
+      font-size: 17px;
+  }
+  .watch-right-part {
+    padding: 30px;
+    height: 90vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.watch-right-part img {
+    height: 63vh;
+    width: 35vw;
+}
+.radio-watch-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.radio-watch-selection label img {
+    height: 2vh;
+    width: 1vw;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    color: rgba(51, 51, 51, 0.603);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: -47px;
+    left: 34px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 1px;
+    border: solid 1px black;
+  }
+.whiteRadio {
+    background-color: white;
+    border: solid 1px black;
+}
+.blackRadio {
+    background-color: black;
+    border: solid 1px black;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    border: solid 1px #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    border: solid 2px rgba(247, 8, 80, 0.979);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  /* .container .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  } */
+
+.radio-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 7vw;
+}

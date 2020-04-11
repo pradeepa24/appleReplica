@@ -1,0 +1,17 @@
+.page-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 18vw;
+    height: 30vh;
+    padding: 30px;
+   }
+   .page-links img {
+       height: 4vh;
+       width: 2vw;
+   }
+   .page-links a:hover, .page-links a:active, .active-bottom-nav {
+       border: solid 1px black;
+       padding: 5px;
+   }
