@@ -40,3 +40,13 @@
 .main-content div h2 {
     font-size: 52px;
 }
+@media only screen and (max-width : 800px) {
+    .apple-logo-home img {
+        width: 7vw;
+    }
+}
+@media only screen and (max-width : 500px) {
+    .apple-logo-home img {
+        width: 9vw;
+    }
+}

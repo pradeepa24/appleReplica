@@ -14,7 +14,9 @@ export default class Phone extends Component {
     render() {
         return (
           <>
-          <Header currentPage={this.props.history.location.pathname}></Header>
+          <Header currentPage={this.props.history.location.pathname} 
+          isNavVisible={this.props.isNavVisible}
+          toggleVisibility = {this.props.toggleVisibility}></Header>
             <div className="phone-details-wrapper">
             <div className="phone-details">
                <div className="left-part">
@@ -66,7 +68,7 @@ export default class Phone extends Component {
                <div className="right-part">
                 {this.props.changePhone ? 
                 (
-                    <img src={phone2Img} style={{width:'23vw', height: '74vh'}} />
+                    <img src={phone2Img} className="front-view-phone" />
                 ) :
                 (
                     <img src={phone1Img}  />
@@ -74,9 +76,9 @@ export default class Phone extends Component {
                 }
                   
                </div>
-              
+               <BottomNav currentPage={this.props.history.location.pathname}></BottomNav>
             </div>
-             <BottomNav currentPage={this.props.history.location.pathname}></BottomNav>
+            
             </div>
             </>
         )

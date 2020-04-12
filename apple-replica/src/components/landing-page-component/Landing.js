@@ -11,9 +11,11 @@ export default class Landing extends Component {
     render() {
         return (
             <>
-            <Header currentPage={this.props.history.location.pathname}></Header>
+            <Header currentPage={this.props.history.location.pathname} 
+            isNavVisible={this.props.isNavVisible}
+            toggleVisibility = {this.props.toggleVisibility} ></Header>
             <div class="landing-main">
-              <h1>Welcome to Apple</h1>  
+              <h2>Welcome to Apple</h2>  
               <div class="sub-link">
                   <h4>See our Products</h4>
               </div>

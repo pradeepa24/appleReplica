@@ -14,7 +14,8 @@ export default class App extends Component {
       changePhone: true,
       changeWatch: 'White',
       watches: [{color:'White', checked:true},
-                {color:'Black', checked:false}]
+                {color:'Black', checked:false}],
+      isNavVisible: false
     }
 }
 onChangePhone = e => {
@@ -33,14 +34,28 @@ onRadiochange = e => {
   });
   console.log(e.target.checked);
 };
+toggleVisibility = (visibility) => {
+  this.setState({
+    isNavVisible: visibility
+  })
+}
   render() {
   return (
     <div>
       <Switch>
            <Route exact path="/" component={Home} />
-           <Route exact path="/landing" render = { (props) => <Landing {...props} /> } />
-           <Route exact path="/iPhone" render = { (props) => <Phone {...props} changePhone={this.state.changePhone} onChangePhone={this.onChangePhone}/> } />
-           <Route exact path="/watch" render = { (props) => <Watch {...props} changeWatch={this.state.changeWatch}
+           <Route exact path="/landing" render = { (props) => <Landing {...props} 
+           isNavVisible={this.state.isNavVisible}
+           toggleVisibility = {this.toggleVisibility}
+           /> } />
+           <Route exact path="/iPhone" render = { (props) => <Phone {...props} 
+           isNavVisible={this.state.isNavVisible}
+           toggleVisibility = {this.toggleVisibility}
+           changePhone={this.state.changePhone} onChangePhone={this.onChangePhone}/> } />
+           <Route exact path="/watch" render = { (props) => <Watch {...props} 
+           isNavVisible={this.state.isNavVisible}
+           toggleVisibility = {this.toggleVisibility}
+           changeWatch={this.state.changeWatch}
            watches={this.state.watches} onRadiochange={this.onRadiochange}/> } />
            {/* <Route exact path="/new-beer" render = { (props) => <NewBeer {...props} newBeer = {this.state.newBeer} setBeer = {this.setBeer} resetBeer = {this.resetBeer}/> }  />
            <Route exact path="/beers/:id" render = { (props) => <Beer {...props} beer = {this.state.beer} dispBeer = {this.dispBeer}/> }/> */}

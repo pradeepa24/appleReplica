@@ -3,12 +3,16 @@
     src: url('../../fonts/Poppins/Poppins-Regular.ttf'); 
 }
 header {
-    /* background-color: black;
-    color: white; */
-    height: 8vh;
+    height: 9vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.2); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
 }
 header img {
     padding: 10px;
@@ -37,7 +41,7 @@ a:hover, a:active, .navbar__link--active {
     color: black;
     font-weight: bold;
 }
-button {
+nav button {
     height: 5vh;
     width: 9vw;
     background-color: rgba(67, 202, 255, 0.979);
@@ -46,4 +50,89 @@ button {
     font-size: 18px;
     font-weight: bold;
     border: solid 2px rgba(67, 202, 255, 0.979);
+}
+.nav-shrink {
+    display: none;
+}
+.dropdown {
+    display: none;
+}
+.drop-down {
+    display: none;
+}
+@media only screen and (max-width : 800px) {
+    .nav-shrink {
+        display: block;
+        background-color: transparent;
+        border: none; 
+    }
+    /* header img {
+        width: 6vw;
+    } */
+    .apple-logo {
+        width: 10vw;
+    }
+    .apple-logo img {
+        width: 6vw;
+    }
+    .nav-shrink img {
+        height: 9vh;
+        width: 8vw;
+    }
+    nav {
+        display: none;
+    }
+    .drop-down {
+        width: 250px;
+        height: 43vh;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 1px;
+        top: 90px;
+        display: block;
+    }
+    .drop-down ul {
+        list-style: none;
+    }
+    .drop-down a {
+        color: rgba(83, 83, 83, 0.603);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .drop-down a:hover {
+        color: black;
+    }
+    .drop-down button {
+        color: rgba(83, 83, 83, 0.603);
+        border: none;
+        padding: 12px 16px;
+        font-size: 17px; 
+        cursor: pointer;
+        height: 9vh;
+        font-family: 'Poppins-Regular', Helvetica;
+        background-color: transparent;
+    }
+    .drop-down button:hover {
+        color: black;
+        font-weight: bold;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+}
+@media only screen and (max-width : 500px) {
+    .nav-shrink img  {
+       width: 15vw;
+    }
+    .apple-logo {
+        width: 15vw;
+    }
+    .apple-logo img {
+        width: 9vw;
+    }
 }

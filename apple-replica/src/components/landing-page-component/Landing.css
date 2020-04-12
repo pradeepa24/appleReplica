@@ -8,13 +8,33 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
 }
-h1 {
-    font-size: 95px;
+.landing-main h2 {
+    font-size: 60px;
+    font-family: 'Poppins-Bold';
 }
 h4 {
     color: rgba(67, 202, 255, 0.979);
 }
 .sub-link {
     height: 30vh;
+}
+@media only screen and (max-width : 800px) {
+    .landing-main {
+        background-size: contain;
+        padding-top: 105px;
+    }
+    .landing-main h2 {
+        font-size: 40px;
+    }
+    .sub-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+}
+@media only screen and (max-width : 357px) {
+  
 }

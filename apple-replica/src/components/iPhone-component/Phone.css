@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 65px;
 }
 .phone-details {
     padding: 50px;
@@ -185,4 +186,122 @@ h1 {
   }
   .toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
     right: 0px;
+  }
+  .front-view-phone {
+    width: 23vw !important;
+    height: 75vh !important;
+  }
+  @media only screen and (max-width : 800px) {
+    .phone-details-wrapper {
+      height: auto;
+      width: 90vw;
+    }
+    .phone-details {
+      flex-direction: column-reverse;
+      height: auto;
+      width: 90vw;
+      padding-top: 0px;
+    }
+    .left-part {
+      height: 60vh;
+      width: 75vw;
+      flex-direction: column-reverse;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    .right-part {
+      height: 50vh;
+      width: 75vw;
+    }
+    .right-part img {
+      height: 47vh;
+      width: 30vw;
+    }
+    .front-view-phone {
+      width: 40vw !important;
+      height: 52vh !important;
+    }
+    .phone-description {
+      width: 70vw;
+      background-size: contain;
+    }
+    .bottom-phone-description {
+      width: 82vw;
+      padding-left: 30px;
+    }
+    .phone-pricing {
+      width: 50vw;
+    }
+    .phone-models {
+      width: 35vw;
+    }
+    .phone-mini-view {
+      width: 30vw;
+    }
+    .phone-mini-view img {
+      width: 10vw;
+      height: 12vh;
+    }
+    .phone-pricing h2 {
+      font-size: 26px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    .phone-details p {
+      line-height: 1;
+      font-size: 17px;
+    }
+  }
+  @media only screen and (max-width : 500px) {
+    .phone-details {
+      padding: 0px;
+    }
+    .front-view-phone {
+      width: 60vw !important;
+      height: 45vh !important;
+    }
+    .bottom-phone-description {
+      flex-direction: column-reverse;
+      width: 60vw;
+      height: 60vh;
+    }
+    .phone-models {
+      width: 60vw;
+      height: 20vh;
+    }
+    .phone-mini-view {
+      width: 60vw;
+      height: 20vh;
+    }
+    .phone-mini-view img {
+      height: 9vh;
+    }
+    .right-part img {
+      height: 40vh;
+      width: 45vw;
+    }
+    .phone-pricing {
+      width: 78vw;
+      height: 10vh;
+    }
+    .main-phone-title {
+      width: 60vw;
+    }
+    .right-part {
+      height: 50vh;
+      width: 75vw;
+    }
+    .right-part img {
+      height: 39vh;
+      width: 42vw;
+    }
+    .front-view-phone {
+      width: 55vw !important;
+      height: 42vh !important;
+    }
   }

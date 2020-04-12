@@ -28,7 +28,9 @@ export default class Watch extends Component {
     render() {
         return (
             <>
-            <Header currentPage={this.props.history.location.pathname}></Header>
+            <Header currentPage={this.props.history.location.pathname} 
+            isNavVisible={this.props.isNavVisible}
+            toggleVisibility = {this.props.toggleVisibility}></Header>
             <div className="watch-details-wrapper">
                <div className="watch-details">
                  <div className="left-part">
@@ -63,8 +65,8 @@ export default class Watch extends Component {
                       {this.displayWatchesRadio()}
                    </div>
                  </div>
-               </div>
             <BottomNav currentPage={this.props.history.location.pathname}></BottomNav>
+               </div>
             </div>
             </>
         )
