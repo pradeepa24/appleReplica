@@ -6,7 +6,6 @@ import Header from '../header-component/header';
 export default class Landing extends Component {
     constructor(props) {
         super(props);
-        console.log(this.props.history.location);
         setTimeout(() =>{
            this.props.disableShowMessage();
         },2000)

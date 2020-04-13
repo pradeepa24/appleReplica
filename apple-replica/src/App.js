@@ -49,7 +49,6 @@ disableShowMessage = () => {
   })
 }
 onChangePhone = e => {
-  console.log(e.target.checked);
   this.setState({
       changePhone: e.target.checked
   })
@@ -62,7 +61,6 @@ onRadiochange = e => {
       changeWatch: e.target.value,
       watches: watchesCopy
   });
-  console.log(e.target.checked);
 };
 toggleVisibility = (visibility) => {
   this.setState({

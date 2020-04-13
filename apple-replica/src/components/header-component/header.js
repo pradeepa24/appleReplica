@@ -8,7 +8,6 @@ export default class header extends Component {
     this.props.toggleVisibility(!this.props.isNavVisible);
   }
   navigate = () => {
-    console.log(this.props);
     this.props.history.push('/login');
   }
   logoutCall = () => {
