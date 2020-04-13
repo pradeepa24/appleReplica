@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9e71dd9c25fee5cc5687e59e67812d80",
+    "revision": "388ae7f899151c991c26e7c1579f699d",
     "url": "/appleReplica/index.html"
   },
   {
-    "revision": "37714ee0d6e038c145bf",
+    "revision": "a294eb2f6ec5a2125df4",
     "url": "/appleReplica/static/css/main.8b3d12a8.chunk.css"
   },
   {
-    "revision": "30f176dc5cb34f7bcbd1",
-    "url": "/appleReplica/static/js/2.d503ae39.chunk.js"
+    "revision": "c41efcd8a0c91734440f",
+    "url": "/appleReplica/static/js/2.0672896d.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/appleReplica/static/js/2.d503ae39.chunk.js.LICENSE.txt"
+    "url": "/appleReplica/static/js/2.0672896d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "37714ee0d6e038c145bf",
-    "url": "/appleReplica/static/js/main.743745cd.chunk.js"
+    "revision": "a294eb2f6ec5a2125df4",
+    "url": "/appleReplica/static/js/main.d4a9d37c.chunk.js"
   },
   {
     "revision": "e7f9f06d0820447850f5",
     "url": "/appleReplica/static/js/runtime-main.552e0946.js"
   },
   {
-    "revision": "a5f42e585040632b43f7754545cbc0c2",
-    "url": "/appleReplica/static/media/Black Watch-1@2x.a5f42e58.png"
+    "revision": "5296aa9ad6cbb5191cc09ad7ab9fa974",
+    "url": "/appleReplica/static/media/Black Watch-1.5296aa9a.png"
   },
   {
     "revision": "3bf176e434eda5911d43674e8e082786",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/appleReplica/static/media/Poppins-Regular.41e8dead.ttf"
   },
   {
-    "revision": "8e4294024d9a09904610232da8448f76",
-    "url": "/appleReplica/static/media/White Watch-2@2x.8e429402.png"
+    "revision": "96d309bbc7ca7e2c5ea5aa36d609cd88",
+    "url": "/appleReplica/static/media/White Watch-2.96d309bb.png"
   },
   {
     "revision": "53f9bbc342c3fe6e9cf99f325854720a",

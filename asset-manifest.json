@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/appleReplica/static/css/main.8b3d12a8.chunk.css",
-    "main.js": "/appleReplica/static/js/main.743745cd.chunk.js",
-    "main.js.map": "/appleReplica/static/js/main.743745cd.chunk.js.map",
+    "main.js": "/appleReplica/static/js/main.d4a9d37c.chunk.js",
+    "main.js.map": "/appleReplica/static/js/main.d4a9d37c.chunk.js.map",
     "runtime-main.js": "/appleReplica/static/js/runtime-main.552e0946.js",
     "runtime-main.js.map": "/appleReplica/static/js/runtime-main.552e0946.js.map",
-    "static/js/2.d503ae39.chunk.js": "/appleReplica/static/js/2.d503ae39.chunk.js",
-    "static/js/2.d503ae39.chunk.js.map": "/appleReplica/static/js/2.d503ae39.chunk.js.map",
+    "static/js/2.0672896d.chunk.js": "/appleReplica/static/js/2.0672896d.chunk.js",
+    "static/js/2.0672896d.chunk.js.map": "/appleReplica/static/js/2.0672896d.chunk.js.map",
     "index.html": "/appleReplica/index.html",
-    "precache-manifest.d497d1c099b6cc2442e7e437bac7064d.js": "/appleReplica/precache-manifest.d497d1c099b6cc2442e7e437bac7064d.js",
+    "precache-manifest.8ca69b7126ab01ce1c373481c472ea77.js": "/appleReplica/precache-manifest.8ca69b7126ab01ce1c373481c472ea77.js",
     "service-worker.js": "/appleReplica/service-worker.js",
     "static/css/main.8b3d12a8.chunk.css.map": "/appleReplica/static/css/main.8b3d12a8.chunk.css.map",
-    "static/js/2.d503ae39.chunk.js.LICENSE.txt": "/appleReplica/static/js/2.d503ae39.chunk.js.LICENSE.txt",
-    "static/media/Black Watch-1@2x.png": "/appleReplica/static/media/Black Watch-1@2x.a5f42e58.png",
+    "static/js/2.0672896d.chunk.js.LICENSE.txt": "/appleReplica/static/js/2.0672896d.chunk.js.LICENSE.txt",
+    "static/media/Black Watch-1.png": "/appleReplica/static/media/Black Watch-1.5296aa9a.png",
     "static/media/Iphone 1@2x.png": "/appleReplica/static/media/Iphone 1@2x.3bf176e4.png",
     "static/media/index.css": "/appleReplica/static/media/Poppins-ExtraBold.6b78c7ec.ttf",
     "static/media/header.css": "/appleReplica/static/media/Poppins-Regular.41e8dead.ttf",
-    "static/media/White Watch-2@2x.png": "/appleReplica/static/media/White Watch-2@2x.8e429402.png",
+    "static/media/White Watch-2.png": "/appleReplica/static/media/White Watch-2.96d309bb.png",
     "static/media/apple-iphonexs-max-gold-1.png": "/appleReplica/static/media/apple-iphonexs-max-gold-1.53f9bbc3.png",
     "static/media/apple-iphonexs-max-gold-back-2.png": "/appleReplica/static/media/apple-iphonexs-max-gold-back-2.ab924469.png",
     "static/media/apple-iphonexs-max-gold-back-2@2x.png": "/appleReplica/static/media/apple-iphonexs-max-gold-back-2@2x.7d037115.png",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.552e0946.js",
-    "static/js/2.d503ae39.chunk.js",
+    "static/js/2.0672896d.chunk.js",
     "static/css/main.8b3d12a8.chunk.css",
-    "static/js/main.743745cd.chunk.js"
+    "static/js/main.d4a9d37c.chunk.js"
   ]
 }
