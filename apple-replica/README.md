@@ -1,3 +1,24 @@
+Apple-Replica
+
+This is a sample react project which is to replicate the below prototype 
+https://xd.adobe.com/spec/97ce7a5b-e6ef-43d0-6d20-047c5de9bfcf-e1ff/
+
+As this is not fully developed, there is no user sign in page.
+Login credentials:
+username - reactPerson
+password - happyPath
+
+Notify Me and Buy now buttons won't work as it is not implemented.
+
+MacBook Pro navigation item is not implemented, but a page is created and a message is displayed for a bettter user experience.
+
+Developed this app with responsiveness(minimum) due to time constraint
+
+created login form and implemented authorized routes. If the user has to view the products, they have to login, else it will navigate to the login page.
+
+Added success messages and Error messages if the login fails.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
