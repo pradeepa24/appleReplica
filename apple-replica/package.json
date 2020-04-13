@@ -2,7 +2,7 @@
   "name": "apple-replica",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pradeepa24.github.io/apple-replica/",
+  "homepage": "https://pradeepa24.github.io/appleReplica/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
