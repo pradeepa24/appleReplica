@@ -81,7 +81,7 @@ export default class Phone extends Component {
                     <img src={phone2Img} className="front-view-phone" />
                 ) :
                 (
-                    <img src={phone1Img}  />
+                    <img src={phone1SmImg}  />
                 )
                 }
                   

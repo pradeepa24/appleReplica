@@ -3,8 +3,8 @@ import './Watch.css';
 import BottomNav from '../bottom-nav-component/BottomNav';
 import Header from '../header-component/header';
 import {Link } from 'react-router-dom';
-import watch1Img from '../../images/White Watch-2@2x.png';
-import watch2Img from '../../images/Black Watch-1@2x.png';
+import watch1Img from '../../images/White Watch-2.png';
+import watch2Img from '../../images/Black Watch-1.png';
 
 export default class Watch extends Component {
   constructor(props) {
