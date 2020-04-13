@@ -20,6 +20,17 @@ h4 {
 .sub-link {
     height: 30vh;
 }
+.success-message {
+    height: 5vh;
+    width: 100vw;
+    color: green;
+    margin-top: 75px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(138, 241, 128, 0.5);
+}
 @media only screen and (max-width : 800px) {
     .landing-main {
         background-size: contain;

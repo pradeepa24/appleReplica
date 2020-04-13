@@ -7,6 +7,25 @@ export default class header extends Component {
   displayNav = () => {
     this.props.toggleVisibility(!this.props.isNavVisible);
   }
+  navigate = () => {
+    console.log(this.props);
+    this.props.history.push('/login');
+  }
+  logoutCall = () => {
+    this.props.logout();
+    setTimeout(()=>{
+       if(!this.props.authorized) {
+         if(this.props.currentPage === '/landing') {
+           setTimeout(()=>{
+             window.location.reload()
+           },2000);
+         } else {
+           this.props.history.push('/landing');
+         }
+         this.props.enableShowMessage();
+       }
+    },100)
+  }
     render() {
         return (
           <>
@@ -28,6 +47,18 @@ export default class header extends Component {
                      className={this.props.currentPage === '/watch' ? "navbar__link--active" : ''}
                      to="/watch"><p>Watch</p></Link>
                      <button>Notify me</button>
+                     {!this.props.authorized ?  (
+                      <button
+                     onClick={this.navigate}
+                     >Login</button>
+                     ) :
+                     (
+                      <button
+                     onClick={this.logoutCall}
+                     >Logout</button>
+                     )
+                     }
+                     
                  </nav>
                  <div className="dropdown">
                    <button onClick={this.displayNav} className="nav-shrink">
@@ -50,6 +81,19 @@ export default class header extends Component {
                      onClick={()=>{this.props.toggleVisibility(false)}}
                      ><p>Watch</p></Link></li>
                      <li><button>Notify me</button></li>
+                     <li>
+                     {!this.props.authorized ?  (
+                      <button
+                     onClick={this.navigate}
+                     >Login</button>
+                     ) :
+                     (
+                      <button
+                     onClick={this.logoutCall}
+                     >Logout</button>
+                     )
+                     }
+                     </li>
                  </ul>
                </div>
                ) :

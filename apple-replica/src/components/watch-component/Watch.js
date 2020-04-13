@@ -7,6 +7,12 @@ import watch1Img from '../../images/White Watch-2@2x.png';
 import watch2Img from '../../images/Black Watch-1@2x.png';
 
 export default class Watch extends Component {
+  constructor(props) {
+    super(props);
+    if (!this.props.authorized) {
+      this.props.history.push('/login');
+    }
+  }
     displayWatchesRadio = () =>{
         return this.props.watches.map((watch,ind)=>{
             return (
@@ -30,7 +36,11 @@ export default class Watch extends Component {
             <>
             <Header currentPage={this.props.history.location.pathname} 
             isNavVisible={this.props.isNavVisible}
-            toggleVisibility = {this.props.toggleVisibility}></Header>
+            history = {this.props.history}
+            toggleVisibility = {this.props.toggleVisibility}
+            authorized = {this.props.authorized}
+            logout = {this.props.logout}
+            enableShowMessage = {this.props.enableShowMessage}></Header>
             <div className="watch-details-wrapper">
                <div className="watch-details">
                  <div className="left-part">

@@ -11,12 +11,22 @@ import Header from '../header-component/header';
 import {Link } from 'react-router-dom';
 
 export default class Phone extends Component {
+  constructor(props) {
+    super(props);
+    if (!this.props.authorized) {
+      this.props.history.push('/login');
+    }
+  }
     render() {
         return (
           <>
           <Header currentPage={this.props.history.location.pathname} 
           isNavVisible={this.props.isNavVisible}
-          toggleVisibility = {this.props.toggleVisibility}></Header>
+          history = {this.props.history}
+          toggleVisibility = {this.props.toggleVisibility}
+          authorized = {this.props.authorized}
+            logout = {this.props.logout}
+            enableShowMessage = {this.props.enableShowMessage}></Header>
             <div className="phone-details-wrapper">
             <div className="phone-details">
                <div className="left-part">
