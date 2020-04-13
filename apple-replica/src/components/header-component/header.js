@@ -41,7 +41,11 @@ export default class header extends Component {
                      className={this.props.currentPage === '/iPhone' ? "navbar__link--active" : ''}
                      to="/iPhone"
                      ><p>iPhone</p></Link>
-                     <Link><p>MacBookPro</p></Link>
+                     <Link
+                      exact
+                     className={this.props.currentPage === '/mac' ? "navbar__link--active" : ''}
+                     to="/mac"
+                     ><p>MacBookPro</p></Link>
                      <Link 
                      exact
                      className={this.props.currentPage === '/watch' ? "navbar__link--active" : ''}
@@ -73,7 +77,11 @@ export default class header extends Component {
                      to="/iPhone"
                      onClick={()=>{this.props.toggleVisibility(false)}}
                      ><p>iPhone</p></Link></li>
-                     <li><Link onClick={()=>{this.props.toggleVisibility(false)}}><p>MacBookPro</p></Link></li>
+                     <li><Link 
+                      exact
+                     className={this.props.currentPage === '/mac' ? "navbar__link--active" : ''}
+                     to="/mac"
+                     onClick={()=>{this.props.toggleVisibility(false)}}><p>MacBookPro</p></Link></li>
                      <li><Link 
                      exact
                      className={this.props.currentPage === '/watch' ? "navbar__link--active" : ''}

@@ -3,10 +3,10 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
-form {
-    height: 50vh;
+.login-content form {
+    height: 55vh;
     width: 40vw;
     display: flex;
     flex-direction: column;
@@ -14,17 +14,17 @@ form {
     align-items: center;
     padding: 20px;
 }
-form div {
+.login-content form div {
     width: 40vw;
     padding: 10px;
     display: flex;
    flex-direction: column;
    justify-content: space-around;
 }
-label {
+.login-content label {
     font-weight: bold;
 }
-input {
+.login-content input {
     width: 40vw;
     height: 5vh;
     border-radius: 20px;
@@ -32,12 +32,12 @@ input {
     color: black;
     padding: 10px;
 }
-input::placeholder {
+.login-content input::placeholder {
     color: rgba(83, 83, 83, 0.603);
     text-align: center;
     font-size: 12px;
 }
-form button {
+.login-content form button {
     width: 18vw;
     height: 5vh;
     border-radius: 10px;
@@ -47,11 +47,11 @@ form button {
     color: white;
     border: solid 2px rgba(67, 202, 255, 0.979);
 }
-h2 {
+.login-wrapper h2 {
     text-align: center;
     padding-top: 100px;
 }
-span {
+.error-message {
     color: red;
     display: flex;
     justify-content: center;

@@ -7,6 +7,7 @@ import Landing from './components/landing-page-component/Landing';
 import Phone from './components/iPhone-component/Phone';
 import Watch from './components/watch-component/Watch';
 import Login from './components/login-component/Login';
+import Mac from './components/mac-component/Mac';
 
 export default class App extends Component {
   constructor(props) {
@@ -97,6 +98,14 @@ this.setState({
     <div>
       <Switch>
            <Route exact path="/" component={Home} />
+           <Route exact path="/mac" render = { (props) => <Mac {...props} 
+           isNavVisible={this.state.isNavVisible}
+           toggleVisibility = {this.toggleVisibility}
+           changePhone={this.state.changePhone} onChangePhone={this.onChangePhone}
+           authorized = {this.state.authorized}
+           logout = {this.logout}
+           enableShowMessage = {this.enableShowMessage}
+           /> } />
            <Route exact path="/login" render = { (props) => <Login {...props} 
            userName={this.state.userName}
            password = {this.state.password}

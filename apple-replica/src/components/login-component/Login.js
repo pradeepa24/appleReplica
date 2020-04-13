@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css';
+import {Link } from 'react-router-dom';
 
 export default class Login extends Component {
     loginCall = (e) => {
@@ -14,12 +15,14 @@ export default class Login extends Component {
     }
     render() {
         return (
-            <div>
-                 <header class="header-main">
-                  <div class="apple-logo-home">
+            <div className="login-wrapper">
+             <Link to="/landing">
+                 <header className="header-main">
+                  <div className="apple-logo-home">
                    <img src="https://images-na.ssl-images-amazon.com/images/I/31yHeZqoYkL._AC_SY355_.jpg"></img>
                   </div>
                 </header>
+            </Link>
             <h2>Please login to view our products</h2>
             <div className="login-content">
                <form>
@@ -42,7 +45,7 @@ export default class Login extends Component {
                 <button onClick={this.loginCall}>LOGIN</button>
                </form>
             </div>
-            {this.props.showError ? (<span><small>Please enter a valid user name and password</small></span>) : (<></>)}
+            {this.props.showError ? (<span className="error-message"><small>Please enter a valid user name and password</small></span>) : (<></>)}
             </div>
         )
     }
